@@ -7,7 +7,7 @@ Key features:
 - single source of truth for schema:
   - validation schemas
   - GraphQL schemas
-  - typescript type schemas
+  - types in typescript
   - database schemas
 
 1. For requests, we can use zod as source of truth for validation, type and graphql schema.
@@ -20,3 +20,4 @@ TODO:
 - [ ] add option to add name into zod schema, so we can add name to zod schema without specifying it in description
 - [ ] register graphQL nestjs module dynamically with nestjs conventions `forRoot options`
 - [ ] add transformation layer into resolvers to transform db model into plain object 
+- [ ] extract graphql types from db model automatically without specifying them with `Field` decorator
