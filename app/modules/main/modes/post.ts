@@ -8,7 +8,7 @@ export default class Post extends BaseModel {
   id!: number
 
   @column()
-  title!: string
+  content!: string
 
   @column()
   userId!: number

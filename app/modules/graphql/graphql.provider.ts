@@ -20,16 +20,13 @@ export default class GraphqlProvider {
     await registerProviders(this.app, [UserResolver, PostResolver])
     const { GraphqlModule } = await import('./integrations/nestjs/graphql.module.js')
 
-    // todo: move nestjs to deps not devDeps
     const nestContext = await NestFactory.createApplicationContext(GraphqlModule)
     const gQlModule = nestContext.get(GraphQLModule)
     const builtSchema = (gQlModule as any).gqlSchemaHost.schema
 
     const apolloServer = new ApolloServer({
-      // typeDefs: schema,
       schema: builtSchema,
       csrfPrevention: false,
-      // resolvers: [userResolver],
       plugins: [
         process.env.NODE_ENV === 'production'
           ? ApolloServerPluginLandingPageProductionDefault()

@@ -12,3 +12,10 @@ Key features:
 
 1. For requests, we can use zod as source of truth for validation, type and graphql schema.
 2. For response, we can use adonis db model as source of truth for graphql schema.
+
+TODO:
+- [ ] apply middleware to not call serialize for each db call
+- [ ] naming convention from resolver, to not prefix each method with class name. Because same method names override each other across resolvers.
+- [ ] automatically load resolvers from filesystem
+- [ ] add option to add name into zod schema, so we can add name to zod schema without specifying it in description
+- [ ] register graphQL nestjs module dynamically with nestjs conventions `forRoot options`
