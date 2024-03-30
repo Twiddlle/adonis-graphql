@@ -3,15 +3,14 @@ import { column, BaseModel, hasOne } from '@adonisjs/lucid/orm'
 import User from './user.js'
 import { type HasOne } from '@adonisjs/lucid/types/relations'
 import { Field, Int, ObjectType } from '@nestjs/graphql'
+import { gColumn } from '../../graphql/integrations/adonisjs/lucid.decorators.js'
 
 @ObjectType()
 export default class Post extends BaseModel {
-  @Field(() => Int)
-  @column({ isPrimary: true })
+  @gColumn({ isPrimary: true, gql: () => Int })
   id!: number
 
-  @Field()
-  @column()
+  @gColumn()
   content!: string
 
   @Field()
