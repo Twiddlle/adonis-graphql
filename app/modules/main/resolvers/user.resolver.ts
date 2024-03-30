@@ -6,7 +6,7 @@ import { inject } from '@adonisjs/core'
 import { Database } from '@adonisjs/lucid/database'
 import { makePaginationResponseScheme, PaginationScheme } from '../schemas/common.schemas.js'
 import type { PaginationType } from '../schemas/common.schemas.js'
-import User from '../modes/user.js'
+import User from '../models/user.js'
 
 @Resolver('User')
 @inject()
