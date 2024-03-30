@@ -26,9 +26,11 @@ export default class User extends BaseModel {
   @column()
   password!: string
 
+  @Field(() => String)
   @column.dateTime({ autoCreate: true })
   createdAt!: DateTime
 
+  @Field(() => String)
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   updatedAt!: DateTime
 }

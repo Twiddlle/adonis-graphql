@@ -19,3 +19,4 @@ TODO:
 - [ ] automatically load resolvers from filesystem
 - [ ] add option to add name into zod schema, so we can add name to zod schema without specifying it in description
 - [ ] register graphQL nestjs module dynamically with nestjs conventions `forRoot options`
+- [ ] add transformation layer into resolvers to transform db model into plain object 

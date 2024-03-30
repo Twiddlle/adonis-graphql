@@ -22,9 +22,11 @@ export default class Post extends BaseModel {
   @hasOne(() => User)
   author!: HasOne<typeof User>
 
+  @Field(() => String)
   @column.dateTime({ autoCreate: true })
   createdAt!: DateTime
 
+  @Field(() => String)
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   updatedAt!: DateTime
 }

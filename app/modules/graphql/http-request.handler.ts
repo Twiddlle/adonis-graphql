@@ -16,7 +16,6 @@ export async function httpRequestHandler(
       search: ctx.request.parsedUrl.search ?? '',
     },
     context() {
-      const body = ctx.request.body()
       return contextFunction(ctx)
     },
   })
