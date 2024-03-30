@@ -16,7 +16,7 @@ export default class GraphqlProvider {
   constructor(protected app: ApplicationService) {}
 
   async boot() {
-    // use register async for nest module to dont use dynamic import
+    // use register async for nest module to don't use dynamic import
     await registerProviders(this.app, [UserResolver, PostResolver])
     const { GraphqlModule } = await import('./integrations/nestjs/graphql.module.js')
 

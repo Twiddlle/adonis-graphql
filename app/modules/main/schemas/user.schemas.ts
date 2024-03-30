@@ -6,7 +6,7 @@ export const UserCreateScheme = z
     password: z.string().min(6),
     fullName: z.string().min(2),
   })
-  .describe('UserCreateScheme: Create user scheme')
+  .describe('UserCreate: Create user scheme')
 
 export type UserCreateType = z.infer<typeof UserCreateScheme>
 
@@ -15,4 +15,4 @@ export const UserResponseSchema = z
     id: z.number(),
     email: z.string().email(),
   })
-  .describe('User: User instance')
+  .describe('UserResponse: User instance')

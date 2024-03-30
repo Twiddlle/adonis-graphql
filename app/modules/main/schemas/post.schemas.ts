@@ -8,14 +8,3 @@ export const PostCreateSchema = z
   .describe('PostCreate: Create post')
 
 export type PostCreateType = z.infer<typeof PostCreateSchema>
-
-export const PostResponseSchema = z
-  .object({
-    id: z.number(),
-    content: z.string(),
-    userId: z.number(),
-    createdAt: z.string(),
-    updatedAt: z.string(),
-  })
-  .describe('Post: Post instance')
-export type PostResponseType = z.infer<typeof PostResponseSchema>
