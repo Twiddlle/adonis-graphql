@@ -2,7 +2,7 @@
 
 This is proof of concept of Adonis 6 with GraphQL.
 
-## Getting started
+## Get started
 1. Install dependencies
 ```bash
 pnpm install
@@ -15,6 +15,7 @@ node ace migration:run
 ```bash
 npm run dev
 ```
+4. Visit http://localhost:3333/graphql
 
 ## Concept ideas
 
