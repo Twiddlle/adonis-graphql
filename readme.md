@@ -2,6 +2,22 @@
 
 This is proof of concept of Adonis 6 with GraphQL.
 
+## Getting started
+1. Install dependencies
+```bash
+pnpm install
+```
+2. Run migrations
+```bash
+node ace migration:run
+```
+3. Start the server
+```bash
+npm run dev
+```
+
+## Concept ideas
+
 The aim of this project is to show how to integrate GraphQL with Adonis 6.
 Key features:
 - single source of truth for schema:
