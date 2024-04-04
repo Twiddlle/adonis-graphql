@@ -37,4 +37,5 @@ TODO:
 - [ ] add option to add name into zod schema, so we can add name to zod schema without specifying it in description
 - [ ] register graphQL nestjs module dynamically with nestjs conventions `forRoot options`
 - [ ] add transformation layer into resolvers to transform db model into plain object 
-- [ ] extract graphql types from db model automatically without specifying them with `Field` decorator
+- [ ] extract graphql types from db model automatically without specifying them with `Field` decorator. 
+PoC here: [app/modules/graphql/integrations/adonisjs/lucid.decorators.ts](app/modules/graphql/integrations/adonisjs/lucid.decorators.ts)
